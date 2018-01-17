@@ -6,6 +6,32 @@
   font-style: normal;
 }
 
+@font-face {
+    font-family: 'gordita';
+    src: url('../fonts/gorditaregular-webfont.eot');
+    src: url('../fonts/gorditaregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gorditaregular-webfont.woff2') format('woff2'),
+         url('../fonts/gorditaregular-webfont.woff') format('woff'),
+         url('../fonts/gorditaregular-webfont.ttf') format('truetype'),
+         url('../fonts/gorditaregular-webfont.svg#gorditaregular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gordita';
+    src: url('../fonts/gorditabold-webfont.eot');
+    src: url('../fonts/gorditabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gorditabold-webfont.woff2') format('woff2'),
+         url('../fonts/gorditabold-webfont.woff') format('woff'),
+         url('../fonts/gorditabold-webfont.ttf') format('truetype'),
+         url('../fonts/gorditabold-webfont.svg#gorditabold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
 body {
   cursor: default;
   font-size: 20px;
@@ -23,11 +49,6 @@ h1 {
   mix-blend-mode: difference;
 }
 
-.fixed {
-  position: fixed;
-  bottom: 0;
-}
-
 @media (min-width: 2000px) {
   h1 {
     font-size: 22vw;
@@ -40,11 +61,18 @@ h1 {
   }
 }
 
+h2 {
+  font-family: 'gordita';
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #000000;
+}
+
 div.hidden {
   display: none;
 }
 
-.dark-bg, .content {
+.dark-bg, .light-bg, .content {
   display: flex;
   align-items: flex-end;
   background-color: #000000;
@@ -53,12 +81,29 @@ div.hidden {
   overflow: hidden;
 }
 
-.content {
+.light-bg, .content {
   background-color: #ffffff;
 }
 
-.more {
+.content {
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+  max-width: 75%;
+  height: 100%;
+}
+
+.container {
+  flex-basis: 33%;
+  padding-bottom: 4rem;
+}
+
+.holding {
   background-color: #eeeeee;
+  height: 300px;
+  /* width: 350px; */
+  margin: 0 2rem 0 0;
 }
 
 a {
