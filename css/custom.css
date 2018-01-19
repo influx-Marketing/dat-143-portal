@@ -77,6 +77,12 @@ div.hidden {
   display: none;
 }
 
+.fixed {
+  position: fixed;
+  display: flex !important;
+  align-items: flex-end;
+  height: 100vh;}
+
 .dark-bg, .light-bg, .content, .content-inside {
   display: flex;
   align-items: flex-end;
@@ -84,6 +90,11 @@ div.hidden {
   height: 100vh;
   width: 100%;
   overflow: hidden;
+}
+
+.dark-bg {
+  margin-left: -2rem;
+  width: auto;
 }
 
 .light-bg, .content, .content-inside {
@@ -104,6 +115,10 @@ div.hidden {
 .content {
   padding-top: 15vh;
   justify-content: start;
+  z-index: 100;
+  position: relative;
+  /* background: linear-gradient(180deg, transparent, white 10%); */
+  height: 110%;
 }
 
 @media (max-width: 1640px) {
