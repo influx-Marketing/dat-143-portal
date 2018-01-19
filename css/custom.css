@@ -7,46 +7,36 @@
 }
 
 @font-face {
-    font-family: 'gordita';
-    src: url('../fonts/gorditaregular-webfont.eot');
-    src: url('../fonts/gorditaregular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/gorditaregular-webfont.woff2') format('woff2'),
-         url('../fonts/gorditaregular-webfont.woff') format('woff'),
-         url('../fonts/gorditaregular-webfont.ttf') format('truetype'),
-         url('../fonts/gorditaregular-webfont.svg#gorditaregular') format('svg');
-    font-weight: 500;
-    font-style: normal;
-
+  font-family: 'gordita';
+  src: url('../fonts/gorditaregular-webfont.eot');
+  src: url('../fonts/gorditaregular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/gorditaregular-webfont.woff2') format('woff2'), url('../fonts/gorditaregular-webfont.woff') format('woff'), url('../fonts/gorditaregular-webfont.ttf') format('truetype'), url('../fonts/gorditaregular-webfont.svg#gorditaregular') format('svg');
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'gordita';
-    src: url('../fonts/gorditabold-webfont.eot');
-    src: url('../fonts/gorditabold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/gorditabold-webfont.woff2') format('woff2'),
-         url('../fonts/gorditabold-webfont.woff') format('woff'),
-         url('../fonts/gorditabold-webfont.ttf') format('truetype'),
-         url('../fonts/gorditabold-webfont.svg#gorditabold') format('svg');
-    font-weight: 700;
-    font-style: normal;
-
+  font-family: 'gordita';
+  src: url('../fonts/gorditabold-webfont.eot');
+  src: url('../fonts/gorditabold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/gorditabold-webfont.woff2') format('woff2'), url('../fonts/gorditabold-webfont.woff') format('woff'), url('../fonts/gorditabold-webfont.ttf') format('truetype'), url('../fonts/gorditabold-webfont.svg#gorditabold') format('svg');
+  font-weight: 700;
+  font-style: normal;
 }
 
 body {
   cursor: default;
   font-size: 20px;
   color: rgb(235, 235, 235);
+  margin-left: 2rem;
 }
 
 h1 {
   font-family: 'League Gothic Condensed';
-  font-size: 26vw;
+  font-size: 25vw;
   font-weight: normal;
   text-transform: uppercase;
   line-height: 90%;
   margin: 0;
-  padding: 2rem;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
 }
 
 @media (min-width: 2000px) {
@@ -68,11 +58,26 @@ h2 {
   color: #000000;
 }
 
+h3 {
+  font-family: 'gordita';
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #000000;
+}
+
+p {
+  font-family: 'gordita';
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+}
+
 div.hidden {
   display: none;
 }
 
-.dark-bg, .light-bg, .content {
+.dark-bg, .light-bg, .content, .content-inside {
   display: flex;
   align-items: flex-end;
   background-color: #000000;
@@ -81,22 +86,49 @@ div.hidden {
   overflow: hidden;
 }
 
-.light-bg, .content {
+.light-bg, .content, .content-inside {
   background-color: #ffffff;
 }
 
-.content {
-  align-items: flex-end;
-  justify-content: space-between;
+.content, .content-inside {
   flex-wrap: wrap;
-  padding: 0 2rem;
-  max-width: 75%;
   height: 100%;
+  overflow: hidden;
+}
+
+.content-inside {
+  padding: 0;
+  max-width: 75%;
+}
+
+.content {
+  padding-top: 15vh;
+  justify-content: start;
+}
+
+@media (max-width: 1640px) {
+  .content, .content-inside {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .content, .content-inside {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .container {
-  flex-basis: 33%;
+  flex-basis: 33.3%;
   padding-bottom: 4rem;
+  width: 100%;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    flex-basis: 50%;
+  }
 }
 
 .holding {
@@ -105,6 +137,19 @@ div.hidden {
   /* width: 350px; */
   margin: 0 2rem 0 0;
 }
+
+.detail {
+  max-width: 25%;
+  padding-bottom: 4rem;
+}
+
+@media (max-width: 1640px) {
+  .detail {
+    max-width: 100%;
+    padding-bottom: 2rem;
+  }
+}
+
 
 a {
   text-decoration: none;
