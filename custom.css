@@ -86,8 +86,8 @@ div.hidden {
 
 .unfixed {
   position: relative;
-  bottom: -115rem;
-  height: 0rem;
+  /*bottom: -115rem;
+  height: 0rem;*/
 }
 
 .dark-bg, .light-bg, .content, .content-inside {
