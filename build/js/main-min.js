@@ -1,0 +1,1 @@
+(function(){console.log("hello there!")}).call(this),$(document).ready(function(){$("div.hidden").fadeIn(1e3).removeClass("hidden")}),$(window).scroll(function(){$(window).scrollTop()>$(".dark-bg").offset().top+$(".dark-bg").height()&&$(".fixed").addClass("unfixed")});

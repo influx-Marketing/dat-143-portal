@@ -81,7 +81,14 @@ div.hidden {
   position: fixed;
   display: flex !important;
   align-items: flex-end;
-  height: 100vh;}
+  height: 100vh;
+}
+
+.unfixed {
+  position: relative;
+  bottom: -115rem;
+  height: 0rem;
+}
 
 .dark-bg, .light-bg, .content, .content-inside {
   display: flex;

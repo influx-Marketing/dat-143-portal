@@ -225,10 +225,10 @@
 	},
 "projectAttributes": {
 	"creationDate": 537878442,
-	"displayValue": "DAT_143-Portal-overview",
+	"displayValue": "dat-143-portal-cover-slider",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-ive",
-	"lastBuiltDate": 537883024
+	"lastBuiltDate": 538391336
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
