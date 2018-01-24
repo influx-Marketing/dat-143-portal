@@ -7,20 +7,22 @@
   <meta name="description" content="Links to Databarracks tools, remote sessions, Backup, IaaS and BCaas portals">
   <meta name="author" content="ya boy">
   <title>Databarracks Portal Overview</title>
+  <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
   <link rel="stylesheet" href="css/master.css">
   <link type="text/css" rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
   <section>
-    <div class="hidden fixed">
-    <h1 class="main-text">Databarracks<br />Portal Overview</h1>
-  </div>
-    <div class="dark-bg"></div>
-    <div class="light-bg"></div>
+    <div class="text hidden">
+      <h1 class="main-text"><span class="black">Databarracks</span><br />Portal Overview</h1>
+    </div>
+    <!-- <div class="dark-bg"></div> -->
+    <!-- <div class="light-bg"></div> -->
   </section>
   <section>
-    <div class="content">
+    <div class="content hidden-2">
+      <div class="db"></div>
       <div class="content-inside">
         <div class="container">
           <h2>Remote Session</h2>
@@ -58,5 +60,22 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js "></script>
 <script src="js/main.js"></script>
+<script>
+  $(document).ready(function() {
+    $('div.text')
+      .fadeIn(1000)
+      .removeClass('hidden');
+    $('div.text')
+      .delay(500)
+      .fadeOut(1000)
+      .addClass('hidden');
+
+    $('div.content')
+    .delay(2500)
+      .fadeIn(1000)
+      .slideup(1000)
+      .removeClass('hidden-2');
+  });
+</script>
 
 </html>

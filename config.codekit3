@@ -52,6 +52,16 @@
 		"oAP": "\/build\/css\/master.css.map",
 		"oF": 0
 		},
+	"\/custom.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/custom-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/fonts\/gorditabold-webfont.eot": {
 		"cB": 0,
 		"ft": 8192,
@@ -166,6 +176,24 @@
 		"oAP": "\/build\/img\/.keep",
 		"oF": 0
 		},
+	"\/img\/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/img\/favicon.ico",
+		"oF": 0
+		},
+	"\/img\/logo.png": {
+		"ft": 32768,
+		"iS": 11606,
+		"oA": 0,
+		"oAP": "\/build\/img\/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -200,6 +228,16 @@
 		"oAP": "\/build\/js\/main.js.map",
 		"oF": 0
 		},
+	"\/main.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/main-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/README.md": {
 		"cB": 0,
 		"cS": 0,
@@ -225,7 +263,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 537878442,
-	"displayValue": "dat-143-portal-cover-slider",
+	"displayValue": "dat-143-portal-master",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-ive",
 	"lastBuiltDate": 538391336
