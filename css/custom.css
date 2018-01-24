@@ -25,7 +25,7 @@
 body {
   cursor: default;
   font-size: 20px;
-  color: rgb(235, 235, 235);
+  color: rgb(0, 0, 0);
   margin-left: 2rem;
 }
 
@@ -36,6 +36,7 @@ h1 {
   text-transform: uppercase;
   line-height: 90%;
   margin: 0;
+  color: rgb(221, 10, 40);
   /* mix-blend-mode: difference; */
 }
 
@@ -73,21 +74,16 @@ p {
   margin: 0;
 }
 
-div.hidden {
+.text {
+  padding: 2rem 0 0 0;
+}
+
+.black {
+  color: rgb(0, 0, 0);
+}
+
+div.hidden, div.hidden-2 {
   display: none;
-}
-
-.fixed {
-  position: fixed;
-  display: flex !important;
-  align-items: flex-end;
-  height: 100vh;
-}
-
-.unfixed {
-  position: relative;
-  bottom: -115rem;
-  height: 0rem;
 }
 
 .dark-bg, .light-bg, .content, .content-inside {
@@ -115,16 +111,15 @@ div.hidden {
 }
 
 .content-inside {
-  padding: 0;
+  padding: 4rem 0 0 0;
   max-width: 75%;
 }
 
 .content {
-  padding-top: 15vh;
+  padding-top: 2rem;
   justify-content: start;
   z-index: 100;
   position: relative;
-  /* background: linear-gradient(180deg, transparent, white 10%); */
   height: 110%;
 }
 
@@ -158,6 +153,12 @@ div.hidden {
   height: 300px;
   /* width: 350px; */
   margin: 0 2rem 0 0;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.holding:hover {
+  box-shadow: 0 0 15px rgba(33,33,33,.25);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .detail {
@@ -183,4 +184,22 @@ a {
 a:hover {
   color: black;
   cursor: alias;
+}
+
+img {
+  max-width: 25%;
+}
+
+.db {
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 2.25rem;
+  width: auto;
+}
+
+@media (max-width: 800px) {
+  .db {
+    height: 2rem;
+  }
 }
